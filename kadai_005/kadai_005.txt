@@ -1,0 +1,71 @@
+
+git-basic-kadai on  main 
+❯ mkdir git_challenge
+
+git-basic-kadai on  main 
+❯ cd git_challenge 
+
+git-basic-kadai/git_challenge on  main 
+❯ git init
+Initialized empty Git repository in /Users/yusuke/samurai/git-basic-kadai/git_challenge/.git/
+
+git_challenge on  main 
+❯ git remote -v
+
+git_challenge on  main 
+❯ git remote add origin https://github.com/nuka-54/git-basic-kadai.git
+
+git_challenge on  main 
+❯ git remote -v                                                       
+origin	https://github.com/nuka-54/git-basic-kadai.git (fetch)
+origin	https://github.com/nuka-54/git-basic-kadai.git (push)
+
+git_challenge on  main 
+❯ touch hello_world.txt
+
+git_challenge on  main [?] 
+❯ ls
+hello_world.txt
+
+git_challenge on  main [?] 
+❯ git status                 
+On branch main
+
+No commits yet
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+	hello_world.txt
+
+nothing added to commit but untracked files present (use "git add" to track)
+
+git_challenge on  main [?] 
+❯ git add hello_world.txt 
+
+git_challenge on  main [+] 
+❯ git commit -m "first commit"
+[main (root-commit) 73b7f4b] first commit
+ 1 file changed, 1 insertion(+)
+ create mode 100644 hello_world.txt
+
+git_challenge on  main 
+❯ git add hello_world.txt     
+
+git_challenge on  main [+] 
+❯ git commit -m "日本語訳を追記"
+[main 1b66dde] 日本語訳を追記
+ 1 file changed, 2 insertions(+), 1 deletion(-)
+
+git_challenge on  main 
+❯ git log
+commit 1b66dde1581e5cefa6b34d765d1189e9729f17ba (HEAD -> main)
+Author: nuka54 <nuka54@outlook.jp>
+Date:   Mon Jun 24 13:31:19 2024 +0900
+
+    日本語訳を追記
+
+commit 73b7f4b9705c6446d4f4c5609c7d0322233694d1
+Author: nuka54 <nuka54@outlook.jp>
+Date:   Mon Jun 24 13:30:42 2024 +0900
+
+    first commit
