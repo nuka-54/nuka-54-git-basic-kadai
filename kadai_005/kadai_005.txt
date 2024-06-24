@@ -57,15 +57,6 @@ git_challenge on  main [+]
  1 file changed, 2 insertions(+), 1 deletion(-)
 
 git_challenge on  main 
-❯ git log
-commit 1b66dde1581e5cefa6b34d765d1189e9729f17ba (HEAD -> main)
-Author: nuka54 <nuka54@outlook.jp>
-Date:   Mon Jun 24 13:31:19 2024 +0900
-
-    日本語訳を追記
-
-commit 73b7f4b9705c6446d4f4c5609c7d0322233694d1
-Author: nuka54 <nuka54@outlook.jp>
-Date:   Mon Jun 24 13:30:42 2024 +0900
-
-    first commit
+❯ git log --oneline 
+1b66dde (HEAD -> main) 日本語訳を追記
+73b7f4b first commit
